@@ -221,7 +221,7 @@ class _AddTaskState extends State<AddTaskScreen> {
         leading: Icon(Icons.label, color: Color(label.colorValue), size: 18.0),
         title: Text(label.name),
         trailing:
-            selectedLabelList.contains(label) ? Icon(Icons.close) : Container(),
+            selectedLabelList.contains(label) ? Icon(Icons.close) : SizedBox(),
         onTap: () {
           setState(() {
             if (!selectedLabelList.contains(label)) {
